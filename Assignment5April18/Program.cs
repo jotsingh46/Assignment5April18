@@ -11,18 +11,18 @@ namespace Assignment5April18
         static void Main(string[] args)
         {
 			string line = "Ada Lovelace wrote the first algorithm designed for processing by an Analytical Engine.";
-			string word = line.split(' ');
-			string worrd = "";
+			string[] word = line.split(' ');
+			string words = "";
 			int counter = 0;
 			foreach(string s in words){
 				if(s.Length > counter)
 				{
-					word =s;
+					words =s;
 					counter = s.length;
 				}
 			}
 			
-			Console.WriteLine("the longest word is"+word);
+			Console.WriteLine("the longest word is"+words);
 			Console.ReadLine();
 		}
 	}
